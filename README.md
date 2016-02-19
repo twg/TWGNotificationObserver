@@ -8,7 +8,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-TWGKeyboardObserver is available through [CocoaPods](http://cocoapods.org). To install
+TWGNotificationObserver is available through [CocoaPods](http://cocoapods.org). To install
 it, ensure your Podfile sources the TWG specs repo:
 
 ```ruby
