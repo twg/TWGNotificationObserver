@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
-                        Helper for working with NSNotificationCenter
+                        Helper for working with NSNotificationCenter. Makes it easier to fire blocks in response to notifications.
                        DESC
 
   s.homepage         = "https://github.com/twg/TWGNotificationObserver"
