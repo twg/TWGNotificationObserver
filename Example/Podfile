@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'TWGNotificationObserver_Tests', :exclusive => true do
   pod 'TWGNotificationObserver', :path => '../'
-
-  
+  pod 'OCMock'
+  pod 'Expecta'
 end

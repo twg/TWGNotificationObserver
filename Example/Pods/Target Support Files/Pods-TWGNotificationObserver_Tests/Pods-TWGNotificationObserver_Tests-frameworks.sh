@@ -84,8 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-TWGNotificationObserver_Tests/Expecta.framework"
+  install_framework "Pods-TWGNotificationObserver_Tests/OCMock.framework"
   install_framework "Pods-TWGNotificationObserver_Tests/TWGNotificationObserver.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-TWGNotificationObserver_Tests/Expecta.framework"
+  install_framework "Pods-TWGNotificationObserver_Tests/OCMock.framework"
   install_framework "Pods-TWGNotificationObserver_Tests/TWGNotificationObserver.framework"
 fi

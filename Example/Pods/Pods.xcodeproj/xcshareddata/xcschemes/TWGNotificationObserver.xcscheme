@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7AAB9117C2A88072FE87D670'
+               BlueprintIdentifier = '9D1A1EFC3043920FE8E72374'
                BlueprintName = 'TWGNotificationObserver'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TWGNotificationObserver.framework'>

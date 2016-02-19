@@ -1,7 +1,11 @@
 PODS:
+  - Expecta (1.0.5)
+  - OCMock (3.2.2)
   - TWGNotificationObserver (0.1.0)
 
 DEPENDENCIES:
+  - Expecta
+  - OCMock
   - TWGNotificationObserver (from `../`)
 
 EXTERNAL SOURCES:
@@ -9,6 +13,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  OCMock: 18c9b7e67d4c2770e95bb77a9cc1ae0c91fe3835
   TWGNotificationObserver: 4a0e363a0f065ede34999265f345bcf07464ea57
 
 COCOAPODS: 0.39.0
