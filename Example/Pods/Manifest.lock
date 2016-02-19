@@ -1,0 +1,14 @@
+PODS:
+  - TWGNotificationObserver (0.1.0)
+
+DEPENDENCIES:
+  - TWGNotificationObserver (from `../`)
+
+EXTERNAL SOURCES:
+  TWGNotificationObserver:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TWGNotificationObserver: 4a0e363a0f065ede34999265f345bcf07464ea57
+
+COCOAPODS: 0.39.0

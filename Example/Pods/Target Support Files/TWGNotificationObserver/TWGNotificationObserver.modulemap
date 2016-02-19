@@ -1,0 +1,6 @@
+framework module TWGNotificationObserver {
+  umbrella header "TWGNotificationObserver-umbrella.h"
+
+  export *
+  module * { export * }
+}
