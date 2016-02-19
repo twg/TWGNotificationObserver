@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "TWGNotificationObserver"
   s.version          = "0.1.0"
-  s.summary          = "A short description of TWGNotificationObserver."
+  s.summary          = "Helper for working with NSNotificationCenter"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        Helper for working with NSNotificationCenter
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TWGNotificationObserver"
+  s.homepage         = "https://github.com/twg/TWGNotificationObserver"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Brian Gilham" => "me@briangilham.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TWGNotificationObserver.git", :tag => s.version.to_s }
+  s.author           = { "Brian Gilham" => "brian@twg.ca" }
+  s.source           = { :git => "https://github.com/twg/TWGNotificationObserver.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
