@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TWGNotificationObserver"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Helper for working with NSNotificationCenter"
 
 # This description is used to generate tags and improve search results.
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/twg/TWGNotificationObserver"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Brian Gilham" => "brian@twg.ca" }
+  s.author           = { "The Working Group": "mobile@twg.ca" }
   s.source           = { :git => "https://github.com/twg/TWGNotificationObserver.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
