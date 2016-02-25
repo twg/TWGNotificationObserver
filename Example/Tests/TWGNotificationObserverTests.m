@@ -19,11 +19,6 @@
 
 @implementation TWGNotificationObserverTests
 
-- (void)setUp
-{
-    [super setUp];
-}
-
 - (void)tearDown
 {
     self.notificationObserver = nil;
