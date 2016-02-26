@@ -2,8 +2,8 @@
 
 @interface TWGNotificationObserver ()
 
-@property (nonatomic, strong) NSArray *notificationNames;
-@property (nonatomic, copy) void(^fireBlock)();
+@property (nonatomic, strong) NSArray<NSString *> *notificationNames;
+@property (nonatomic, copy) void (^fireBlock)();
 @property (nonatomic, strong) NSNotificationCenter *notificationCenter;
 
 @end
@@ -11,46 +11,42 @@
 @implementation TWGNotificationObserver
 
 - (instancetype)initWithNotificationName:(NSString *)notificationName
-                               fireBlock:(void(^)(NSNotification *notification))fireBlock
+                               fireBlock:(void (^)(NSNotification *notification))fireBlock
 {
-    return [self initWithNotificationName:notificationName
-                                   object:nil
-                                fireBlock:fireBlock];
+    return [self initWithNotificationName:notificationName object:nil fireBlock:fireBlock];
 }
 
 - (instancetype)initWithNotificationName:(NSString *)notificationName
                                   object:(id)object
-                               fireBlock:(void(^)(NSNotification *notification))fireBlock
+                               fireBlock:(void (^)(NSNotification *notification))fireBlock
 {
-    return [self initWithNotificationNames:@[notificationName]
+    return [self initWithNotificationNames:@[ notificationName ]
                         notificationCenter:nil
                                     object:object
                                  fireBlock:fireBlock];
 }
 
-- (instancetype)initWithNotificationNames:(NSArray *)notificationNames
-                                fireBlock:(void(^)(NSNotification *notification))fireBlock
+- (instancetype)initWithNotificationNames:(NSArray<NSString *> *)notificationNames
+                                fireBlock:(void (^)(NSNotification *notification))fireBlock
 {
-    return [self initWithNotificationNames:notificationNames
-                        notificationCenter:nil
-                                 fireBlock:fireBlock];
+    return [self initWithNotificationNames:notificationNames notificationCenter:nil fireBlock:fireBlock];
 }
 
-- (instancetype)initWithNotificationNames:(NSArray *)notificationNames
+- (instancetype)initWithNotificationNames:(NSArray<NSString *> *)notificationNames
                        notificationCenter:(NSNotificationCenter *)notificationCenter
-                                fireBlock:(void(^)(NSNotification *notification))fireBlock
+                                fireBlock:(void (^)(NSNotification *notification))fireBlock
 {
-    
+
     return [self initWithNotificationNames:notificationNames
                         notificationCenter:notificationCenter
                                     object:nil
                                  fireBlock:fireBlock];
 }
 
-- (instancetype)initWithNotificationNames:(NSArray *)notificationNames
+- (instancetype)initWithNotificationNames:(NSArray<NSString *> *)notificationNames
                        notificationCenter:(NSNotificationCenter *)notificationCenter
                                    object:(id)object
-                                fireBlock:(void(^)(NSNotification *notification))fireBlock
+                                fireBlock:(void (^)(NSNotification *notification))fireBlock
 {
     if (self = [super init]) {
         self.notificationCenter = notificationCenter ? notificationCenter : [NSNotificationCenter defaultCenter];
@@ -58,7 +54,7 @@
         self.fireBlock = fireBlock;
         [self registerObserversForObject:object];
     }
-    
+
     return self;
 }
 
